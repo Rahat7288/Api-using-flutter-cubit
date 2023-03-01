@@ -1,4 +1,4 @@
-import 'package:api_testing/cubits/user/user_cubit.dart';
+// import 'package:api_testing/cubits/user/user_cubit.dart';
 import 'package:api_testing/screens/home.dart';
 import 'package:api_testing/services/api_service.dart';
 import 'package:flutter/material.dart';
@@ -16,12 +16,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (context)=> UserCubit(apiService: ApiService()))
+        // BlocProvider(create: (context)=> UserCubit(apiService: ApiService()))
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
-          
           primarySwatch: Colors.blue,
         ),
         home: const Home(),
@@ -29,4 +28,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
